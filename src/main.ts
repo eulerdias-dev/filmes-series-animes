@@ -5,6 +5,7 @@ import store from './store/store'
 import vuetify from './plugins/vuetify'
 import firebase from 'firebase'
 import firebaseConfig from '@/config/firebase/FirebaseConfig'
+import './registerRouteConfig'
 import '@babel/polyfill'
 
 Vue.config.productionTip = false
