@@ -3,9 +3,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store/store'
 import vuetify from './plugins/vuetify'
+import firebase from 'firebase'
+import firebaseConfig from '@/config/firebase/FirebaseConfig'
 import '@babel/polyfill'
 
 Vue.config.productionTip = false
+firebase.initializeApp(firebaseConfig)
 
 new Vue({
   router,
