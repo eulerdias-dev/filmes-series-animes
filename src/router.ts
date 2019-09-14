@@ -12,6 +12,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/filmes',
+      name: 'Filmes',
+      component: () => import('./views/Filmes.vue')
     }
     // {
     //   path: '/about',
