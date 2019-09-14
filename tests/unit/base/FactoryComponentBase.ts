@@ -34,6 +34,10 @@ export abstract class FactoryComponentBase<T extends Vue | null> {
     }
   }
 
+  public async obterTextoPorId (id: string): Promise<string> {
+    return this.componente.find(id).text()
+  }
+
   public prepararContainerDeInjecaoDaApi (): void {
     Container.snapshot(HttpService)
   }

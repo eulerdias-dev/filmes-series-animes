@@ -1,4 +1,3 @@
-import Vuetify from 'vuetify'
 import Vuex from 'vuex'
 import { createLocalVue, config } from '@vue/test-utils'
 import Vue from 'vue'

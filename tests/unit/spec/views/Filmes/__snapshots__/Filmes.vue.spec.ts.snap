@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Página de listagem Filmes Snapshot 1`] = `
+<v-container>
+  <v-row no-gutters="">
+    <v-subheader id="titulo">Filmes</v-subheader>
+  </v-row>
+</v-container>
+`;
