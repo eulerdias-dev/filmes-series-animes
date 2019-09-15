@@ -9,7 +9,17 @@ describe('Página de listagem Filmes', () => {
 
     const tituloObtido = await factory.obterTextoPorId('#titulo')
 
-    expect(tituloEsperado).toEqual(tituloObtido)
+    expect(tituloObtido).toEqual(tituloEsperado)
+    done()
+  })
+
+  it('Dado que lista de filmes seja vazia, section-mensagem estara visivel', async (done) => {
+    await factory.montarComponente()
+    await factory.dadoQueFilmesEstejaVazio()
+
+    const sectionMensagemoVisivel = factory.statusSectionMensagem()
+
+    expect(sectionMensagemoVisivel).toBeTruthy()
     done()
   })
 

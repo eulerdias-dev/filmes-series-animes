@@ -4,6 +4,7 @@ exports[`Página de listagem Filmes Snapshot 1`] = `
 <v-container>
   <v-row no-gutters="">
     <v-subheader id="titulo">Filmes</v-subheader>
+    <div id="section-mensagem"><span id="mensagem-erro-obter-filmes">Não foi possível obter os Filmes</span></div>
   </v-row>
 </v-container>
 `;
