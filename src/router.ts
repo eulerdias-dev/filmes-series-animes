@@ -17,6 +17,11 @@ export default new Router({
       path: '/filmes',
       name: 'Filmes',
       component: () => import('./views/Filmes.vue')
+    },
+    {
+      path: '/filmes/:id',
+      name: 'Informações filme',
+      component: () => import('./views/InformacoesFilme.vue')
     }
     // {
     //   path: '/about',

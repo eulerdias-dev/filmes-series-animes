@@ -5,12 +5,14 @@ import { FilmeStore } from './Filme.vuex'
 
 Vue.use(Vuex)
 
-export const store = new Vuex.Store({
+const store = new Vuex.Store({
   modules: {
     ...extractVuexModule(FilmeStore)
   }
 })
 
-const vxm = {
+export const vxm = {
   filme: createProxy(store, FilmeStore)
 }
+
+export default store

@@ -1,6 +1,12 @@
 /* eslint-disable camelcase */
-export interface Paginacao {
-  page: number
-  total_results: number
-  total_pages: number
+export class Paginacao {
+  public page!: number
+  public total_results!: number
+  public total_pages!: number
+
+  constructor (page: number = 0, totalResults: number = 0, totalPages: number = 0) {
+    this.page = page
+    this.total_results = totalResults
+    this.total_pages = totalPages
+  }
 }

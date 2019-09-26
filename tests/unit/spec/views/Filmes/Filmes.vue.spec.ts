@@ -13,15 +13,27 @@ describe('Página de listagem Filmes', () => {
     done()
   })
 
-  it('Dado que lista de filmes seja vazia, section-mensagem estara visivel', async (done) => {
-    await factory.montarComponente()
+  it('Dado que no created a lista de filmes esteja vázia, mutation carregar dados é chamada', async (done) => {
     await factory.dadoQueFilmesEstejaVazio()
+    await factory.montarComponente()
 
-    const sectionMensagemoVisivel = factory.statusSectionMensagem()
-
-    expect(sectionMensagemoVisivel).toBeTruthy()
     done()
   })
+
+  // it('Dado que lista de filmes seja vazia, section-mensagem estara visivel', async (done) => {
+  //   await factory.montarComponente()
+  //   await factory.dadoQueFilmesEstejaVazio()
+
+  //   const sectionMensagemoVisivel = factory.statusSectionMensagem()
+
+  //   expect(sectionMensagemoVisivel).toBeTruthy()
+  //   done()
+  // })
+
+  // it('Dado que lista de Filmes esteja vazia, ', async (done) => {
+
+  //   done();
+  // });
 
   it('Snapshot', async (done) => {
     await factory.montarComponente()
